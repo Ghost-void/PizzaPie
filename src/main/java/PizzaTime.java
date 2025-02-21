@@ -21,25 +21,23 @@ public class PizzaTime {
             else if(streetname.equals("Main")){
             svalid = true;
         }
-        else if(streetname.equals("Henderson")){
+            else if(streetname.equals("Henderson")){
             svalid = true;
         }
-        else if(streetname.equals("Magnus")){
+            else if(streetname.equals("Magnus")){
             svalid = true;
         }
-        else if(streetname.equals("Mountain")){
+            else if(streetname.equals("Mountain")){
             svalid = true;
         }
         }
-        while(!bvalid){
+        while (!scanner.hasNextInt()){
             scanner.nextLine();
             System.out.println("What is your street number?; ");
             int number = scanner.nextInt();
             scanner.nextLine();
-            boolean isNumber = Character.isDigit(number);
-            if(!isNumber){
-                System.out.println("Wrong, this needs to be a number");
-            }
+            System.out.println("Wrong, this needs to be a number");
+            
         }
         while(!tvalid){
             System.out.println("what city are you in?; ");
