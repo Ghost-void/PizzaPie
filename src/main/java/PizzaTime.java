@@ -6,6 +6,9 @@ public class PizzaTime {
         
         System.out.println("Pizza Time!");
         boolean svalid = false;
+        boolean bvalid = false;
+        boolean tvalid = false;
+        boolean gvalid = false;
         while(!svalid){
 
             String[] stringArray;
@@ -28,7 +31,7 @@ public class PizzaTime {
             svalid = true;
         }
         }
-        while(!svalid){
+        while(!bvalid){
             scanner.nextLine();
             System.out.println("What is your street number?; ");
             int number = scanner.nextInt();
@@ -38,7 +41,7 @@ public class PizzaTime {
                 System.out.println("Wrong, this needs to be a number");
             }
         }
-        while(!svalid){
+        while(!tvalid){
             System.out.println("what city are you in?; ");
             String city = scanner.nextLine();
             scanner.nextLine();
@@ -46,7 +49,7 @@ public class PizzaTime {
                 System.out.println("Sorry but we don't deliver outside of Winnipeg");
             }
         }
-        while(!svalid){
+        while(!gvalid){
             System.out.println("what is your area code?: ");
             //in a A1A-1A1 format
             String area = scanner.nextLine();
