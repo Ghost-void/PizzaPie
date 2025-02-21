@@ -30,15 +30,17 @@ public class PizzaTime {
             else if(streetname.equals("Mountain")){
             svalid = true;
         }
+        System.out.println(svalid);
         }
         while (!scanner.hasNextInt()){
             scanner.nextLine();
             System.out.println("What is your street number?; ");
-            int number = scanner.nextInt();
+            
             scanner.nextLine();
             System.out.println("Wrong, this needs to be a number");
             
         }
+            int number = scanner.nextInt();
         while(!tvalid){
             System.out.println("what city are you in?; ");
             String city = scanner.nextLine();
