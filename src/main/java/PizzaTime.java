@@ -8,7 +8,7 @@ public class PizzaTime {
         boolean svalid = false;
         boolean bvalid = false;
         boolean tvalid = false;
-        boolean gvalid = false;
+        boolean gvalid = true;
             while(!svalid){
 
             String[] stringArray;
@@ -37,7 +37,7 @@ public class PizzaTime {
             scanner.nextLine();
             
             
-            scanner.nextLine();
+            
             System.out.println("Wrong, this needs to be a number");
             
         }
@@ -61,12 +61,19 @@ public class PizzaTime {
             scanner.nextLine();
             char firstchar = area.charAt(0);
             boolean isFirstCharLetter = Character.isLetter(firstchar); // Returns true
-            System.out.println(isFirstCharLetter);
+            if (!isFirstCharLetter) {
+                gvalid = false;
+            }
             char secchar = area.charAt(2);
             boolean issecCharLetter = Character.isLetter(secchar); // Returns true
-            char thirchar = area.charAt(5);
+            char thirchar = area.charAt(6);
             boolean isthirCharLetter = Character.isLetter(thirchar); // Returns true
-            
+            char fourchar = area.charAt(1);
+            boolean isfourNumber = Character.isDigit(fourchar);
+            char fifchar = area.charAt(5);
+            boolean isfifNumber = Character.isDigit(fifchar);
+            char sixchar = area.charAt(7);
+            boolean issixNumber = Character.isDigit(sixchar);
         }
         
     }
