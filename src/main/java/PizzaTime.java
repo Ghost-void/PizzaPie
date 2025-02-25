@@ -67,46 +67,46 @@ public class PizzaTime {
             if (area.length() == 7){
                 char firstchar = area.charAt(0);
                 boolean isFirstCharLetter = Character.isLetter(firstchar); // Returns true
-                if (isFirstCharLetter = false){
+                if (isFirstCharLetter == false){
                     System.out.println("Wrong on 1");
                     gvalid = false;
                 }
                 char secchar = area.charAt(2);
                 boolean issecCharLetter = Character.isLetter(secchar); // Returns true
-                if (issecCharLetter = false){
+                if (issecCharLetter == false){
                     System.out.println("Wrong on 3");
                     gvalid = false;
                 }
                 char thirchar = area.charAt(5);
                 boolean isthirCharLetter = Character.isLetter(thirchar); // Returns true
-                if (isthirCharLetter = false){
+                if (isthirCharLetter == false){
                     System.out.println("Wrong on 6");
                     gvalid = false;
                 }
                 char fourchar = area.charAt(1);
                 boolean isfourNumber = Character.isDigit(fourchar);
-                if (isfourNumber = false){
+                if (isfourNumber == false){
                     System.out.println("Wrong on 2");
                     gvalid = false;
                 }
                 char fifchar = area.charAt(4);
                 boolean isfifNumber = Character.isDigit(fifchar);
-                if (isfifNumber = false){
+                if (isfifNumber == false){
                     System.out.println("Wrong on 5");
                     gvalid = false;
                 }
                 char sixchar = area.charAt(6);
                 boolean issixNumber = Character.isDigit(sixchar);
-                if (issixNumber = false){
+                if (issixNumber == false){
                     System.out.println("Wrong on 7");
                     gvalid = false;
                 }
                 char sevchar = area.charAt(3);
-                boolean issevNumber = Character.isDigit(sevchar);
-                if (issevNumber = false){
-                    System.out.println("Wrong on dash");
+                if (sevchar != ' '){
+                    System.out.println("Wrong on space");
                     gvalid = false;
                 }
+                gvalid = true;
         }
     }
         
