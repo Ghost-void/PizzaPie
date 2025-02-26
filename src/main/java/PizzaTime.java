@@ -9,12 +9,14 @@ public class PizzaTime {
         boolean bvalid = false;
         boolean tvalid = false;
         boolean gvalid = false;
+        String streetname = "";
+        String city = "";
             while(!svalid){
 
             String[] stringArray;
             stringArray = new String[]{"Burrows", "Main", "Henderson", "Magnus", "Mountain"};
             System.out.println("Whats your streets name?: ");
-            String streetname = scanner.nextLine();
+            streetname = scanner.nextLine();
             if(streetname.equals("Burrows")){
                 svalid = true;
             }
@@ -45,7 +47,7 @@ public class PizzaTime {
             scanner.nextLine();
         while(!tvalid){
             System.out.println("what city are you in?; ");
-            String city = scanner.nextLine();
+            city = scanner.nextLine();
             scanner.nextLine();
             if(!city.equals("Winnipeg")){
                 System.out.println("Sorry but we don't deliver outside of Winnipeg");
@@ -107,6 +109,7 @@ public class PizzaTime {
                 }
             
         }
+        System.out.println("So your location is " + streetname + "street  building " + number + " " + city + " city " + area);
 
     }
         
