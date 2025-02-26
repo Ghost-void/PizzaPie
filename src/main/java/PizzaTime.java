@@ -8,7 +8,7 @@ public class PizzaTime {
         boolean svalid = false;
         boolean bvalid = false;
         boolean tvalid = false;
-        boolean gvalid = true;
+        boolean gvalid = false;
             while(!svalid){
 
             String[] stringArray;
@@ -54,16 +54,15 @@ public class PizzaTime {
                 tvalid = true;
             }
         }
-        while(gvalid){
+        while(!gvalid){
             System.out.println("what is your area code?: ");
+            gvalid = true;
             //in a A1A-1A1 format
             String area = scanner.nextLine();
-            scanner.nextLine();
             if (area.length() != 7) {
                 System.out.println("Wrong length");
                 gvalid = false;
             }
-            gvalid = true;
             if (area.length() == 7){
                 char firstchar = area.charAt(0);
                 boolean isFirstCharLetter = Character.isLetter(firstchar); // Returns true
@@ -106,8 +105,9 @@ public class PizzaTime {
                     System.out.println("Wrong on space");
                     gvalid = false;
                 }
-                gvalid = true;
+            
         }
+
     }
         
     }
